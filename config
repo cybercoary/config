@@ -1,5 +1,5 @@
 {
-    "Version": "0",
+    "Version": "1",
     "ReleaseNotes": "",
     "Sms": "https://cybercoari.com.br/update/admin/sms",
     "UrlUpdate": "https://raw.githubusercontent.com/cybercoary/config/refs/heads/main/config",
