@@ -2,7 +2,7 @@
     "Version": "0",
     "ReleaseNotes": "",
     "Sms": "https://cybercoari.com.br/update/admin/sms",
-    "UrlUpdate": "https://cybercoari.com.br/update/admin/config",
+    "UrlUpdate": "https://raw.githubusercontent.com/cybercoary/config/refs/heads/main/config",
     "Email": "cybercoari@gmail.com",
     "UrlContato": "",
     "videoUrl": "",
