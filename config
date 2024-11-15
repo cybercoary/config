@@ -1,0 +1,158 @@
+{
+    "Version": "0",
+    "ReleaseNotes": "",
+    "Sms": "https://cybercoari.com.br/update/admin/sms",
+    "UrlUpdate": "https://cybercoari.com.br/update/admin/config",
+    "Email": "cybercoari@gmail.com",
+    "UrlContato": "",
+    "videoUrl": "",
+    "logoonline": "https://cybercoari.com.br/imagens/logos.png",
+    "fundoonline": "https://cybercoari.com.br/imagens/fundo.png",
+    "logonline": "",
+    "rodapeonline": "https://cybercoari.com.br/imagens/banner.png",
+    "UrlTermos": "",
+    "CheckUser": "true",
+    "Udp": [
+        {
+            "Porta": "7100"
+        },
+        {
+            "Porta": "7200"
+        },
+        {
+            "Porta": "7300"
+        },
+        {
+            "Porta": "7400"
+        },
+        {
+            "Porta": "7500"
+        }
+    ],
+    "UdpPort": "7100;7200;7300;7400;7500",
+    "Servers": [
+        {
+            "Name": "BR 1",
+            "TYPE": "premium",
+            "FLAG": "br.png",
+            "ServerIP": "[rotate=cdn20.cdntlcomputingbr.shop;cdn21.cdntlcomputingbr.shop;cdn22.cdntlcomputingbr.shop;cdn23.cd",
+            "CheckUser": "http://atlas.cybercoari.com.br/checkuser/conecta4g.php",
+            "ServerPort": "22",
+            "SSLPort": "443",
+            "USER": "",
+            "PASS": ""
+        }
+    ],
+    "Networks": [
+        {
+            "Name": "*****  TIM *****",
+            "FLAG": "tim",
+            "Payload": "",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "",
+            "ProxyPort": "",
+            "Info": ""
+        },
+        {
+            "Name": "TIM FLARE 1",
+            "FLAG": "tim",
+            "Payload": "GET /cdn-cgi/trace HTTP/1.1[lf]Host: apf.maisvantagenstim.com.br[crlf][crlf][split][crlf]GET- / HTTP/1.1[crlf]Host: cybercoari.app.br[crlf]Upgrade: Websocket[crlf][crlf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "apf.maisvantagenstim.com.br",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "TIM FLARE 2",
+            "FLAG": "tim",
+            "Payload": "GET / HTTP/1.1[lf]Host: revive.timrecompensas.com.br[crlf][crlf][split][crlf]GET- / HTTP/1.1[crlf]Host: apps.cybercoari.com.br[lf]Upgrade: Websocket[crlf][crlf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "revive.timrecompensas.com.br",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "TIM FRONT 1",
+            "FLAG": "tim",
+            "Payload": "GET / HTTP/1.1[crlf]Host: tim.com.br[crlf] [crlf]GET /app1705 HTTP/1.1[lf]Host: [app_host][lf]Connection: Upgrade[lf]Upgrade: Websocket[lf][lf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "99.84.31.80",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "TIM FRONT 2",
+            "FLAG": "tim",
+            "Payload": "GET / HTTP/1.1[crlf]Host: tim.com.br[crlf] [crlf]GET / HTTP/1.1[lf]Host: d16zljb8cqaetp.cloudfront.net[lf]Connection: Upgrade[lf]Upgrade: Websocket[lf][lf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "99.84.31.80",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "***** VIVO 80 *****",
+            "FLAG": "vivo",
+            "Payload": "",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "",
+            "ProxyPort": "",
+            "Info": ""
+        },
+        {
+            "Name": "VIVO SECURITY 1",
+            "FLAG": "vivo",
+            "Payload": "[delay_split]ACL / HTTP/1.1[crlf]Host: [rotate=104.18.6.80;104.18.7.80;162.159.138.6;162.159.128.7;104.17.70.206;104.17.71.206;104.17.72.206;104.17.73.206;104.17.74.206;172.64.144.109;104.18.43.147;104.18.7.41][crlf]Connection: Upgrade[crlf]Upgrade: Websocket[crlf][crlf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "::ffff:d10e:4621#d16zljb8cqaetp.cloudfront.net",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "***** CLARO *****",
+            "FLAG": "claro",
+            "Payload": "",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "",
+            "ProxyPort": "",
+            "Info": ""
+        },
+        {
+            "Name": "CLARO 1",
+            "FLAG": "claro",
+            "Payload": "GET / HTTP/1.1[crlf]Host: minhaclaro.claro.com.br[crlf] [crlf]GET /app1705 HTTP/1.1[lf]Host: [app_host][lf]Connection: Upgrade[lf]Upgrade: Websocket[lf][split][lf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "dev-minhaclaro.claro.com.br",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "CLARO 2",
+            "FLAG": "claro",
+            "Payload": "GET / HTTP/1.1[crlf]Host: minhaclaro.claro.com.br[crlf] [crlf]GET / HTTP/1.1[lf]Host: d16zljb8cqaetp.cloudfront.net[lf]Connection: Upgrade[lf]Upgrade: Websocket[lf][split][lf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "dev-minhaclaro.claro.com.br",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        },
+        {
+            "Name": "CLARO 3",
+            "FLAG": "claro",
+            "Payload": "GET / HTTP/1.1[crlf]Host: minhaclaro.claro.com.br[crlf] [crlf]GET / HTTP/1.1[lf]Host: d16zljb8cqaetp.cloudfront.net[lf]Connection: Upgrade[lf]Upgrade: Websocket[lf][split][lf]",
+            "SNI": "",
+            "TlsIP": "",
+            "ProxyIP": "qa-minhaclaro.claro.com.br",
+            "ProxyPort": "80",
+            "Info": "Proxy"
+        }
+    ]
+}
